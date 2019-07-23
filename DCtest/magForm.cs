@@ -115,6 +115,7 @@ namespace DCtest
             string xmlFormat = strings.PRINTER_ACTION_XML;
             string input = string.Format(xmlFormat, (int)Actions.Resume, printerJobID, errorCode);
             bidiSpl.SetPrinterData(strings.PRINTER_ACTION, input);
+            Application.DoEvents();
         }
 
 
